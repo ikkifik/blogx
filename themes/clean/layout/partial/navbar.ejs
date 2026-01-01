@@ -1,0 +1,7 @@
+<h1 id="navbar-h1">Fikri</h1>
+
+<nav>
+  <% for (name in theme.nav)  { %>
+    <a href="<%- url_for(theme.nav[name]) %>" class="menu-item-link"><%= name %></a>
+  <% } %>
+</nav>

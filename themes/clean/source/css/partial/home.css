@@ -1,0 +1,5 @@
+.home-paragraph {
+    line-height: 2rem;
+    text-align: justify;
+    a { text-decoration: underline; }
+}

@@ -1,0 +1,18 @@
+<h1 class="page-h1"><%- titlecase(page.title) %></h1>
+
+<div class="cards">
+    <% for (let item of site.data.projects.projects) {%>
+    <div class="card">
+        <div class="card-details">
+            <img src="<%- url_for('/images/image.png') %>" alt="" class="card-image">
+            <span class="text-title"><%= item.title %></span>
+            <span class="text-body"><%= item.description %></span>
+            <span class="text-body">
+                <a href="<%= item.source %>" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" style="color: black;font-size: 20px;"></i>
+                </a>
+            </span>
+        </div>
+    </div>
+    <% } %>
+</div>

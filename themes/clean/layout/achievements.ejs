@@ -1,0 +1,70 @@
+<h1 class="page-h1"><%- titlecase(page.title) %></h1>
+
+<section class="awards">
+    <h2 class="page-h2">Awards</h2>
+    <table>
+        <colgroup>
+            <col span="1" style="width: 70%;">
+            <col span="1" style="width: 10%;">
+        </colgroup>
+        <tbody>
+            <% for (item of site.data.awards.awards) { %>
+            <tr>
+                <td><%= item.title %></td>
+                <td style="text-align: right;"><%= item.year %></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</section>
+
+<br>
+
+<section class="publications">
+  <h2 class="page-h2">Selected Publications</h2>
+  <table>
+    <colgroup>
+      <col span="1" style="width: 20%" />
+      <col span="1" style="width: 80%" />
+    </colgroup>
+    <tbody>
+      <!-- Conferences -->
+      <% for (let item of site.data.publications.conferences ) { %>
+      <tr>
+        <td style="font-weight: bold">
+          [<%= item.publisher %>] <% if (item.best_paper) { %><br /><span
+            style="color: lightcoral; font-weight: bold; font-size: 14px"
+            >*Best Paper Award</span
+          >
+          <% } %>
+        </td>
+        <td>
+          <b><%= item.title %></b><br />
+          <%= item.authors %><br />
+          <a href="<%= item.doi %>" target="_blank" rel="noopener noreferrer"><b>Paper</b></a>
+        </td>
+      </tr>
+      <% } %>
+
+      <!-- Journal -->
+      <% for (let item of site.data.publications.journal ) { %>
+      <tr>
+        <td style="font-weight: bold">
+          [<%= item.publisher %>] <% if (item.best_paper) { %><br /><span
+            style="color: lightcoral; font-weight: bold; font-size: 14px"
+            >*Best Paper Award</span
+          >
+          <% } %>
+        </td>
+        <td>
+          <b><%= item.title %></b><br />
+          <%= item.authors %><br />
+          <a href="<%= item.doi %>" target="_blank" rel="noopener noreferrer"><b>Paper</b></a>
+        </td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</section>
+
+

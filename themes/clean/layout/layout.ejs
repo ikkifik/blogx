@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= config.title %> - Zuhdi Fikri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%- css('css/style') %>
+</head>
+<body>
+    <%- partial('partial/navbar') %>
+    <div class="container">
+        <%- body %>
+    </div>
+    
+    <footer>
+        <hr style="height:1px;border:none;color:#333;background-color:#333; margin-bottom: 20px;">
+        Last updated: January 1, 2026; 
+        Inspired by (copied from) <a href="https://saugi.me/" target="_blank" rel="noopener noreferrer">Saugi.me</a>; 
+        Made with ❤️ using <a href="https://hexo.io/" target="_blank">Hexo 8.1.1</a></a>
+    </footer>
+</body>
+</html>

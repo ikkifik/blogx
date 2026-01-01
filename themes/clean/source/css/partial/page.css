@@ -1,0 +1,39 @@
+.page-h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 3rem auto 1rem;
+}
+
+.page-h2 {
+    color: white;
+    font-size: 20px;
+}
+
+
+.publications {
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    table tbody tr td {
+        height: 5rem;
+        font-size: 14px;
+    };
+}
+
+.awards {
+    color: rgba(255, 255, 255, 0.8);
+    table tbody tr td {
+        line-height: 1.75rem;
+    }
+}
+
+
+#contact-list {
+    width: 50%;
+    margin: auto;
+    list-style: none;
+    line-height: 2.5rem;
+    a {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+}

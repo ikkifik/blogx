@@ -1,0 +1,18 @@
+projects:
+  - title: Sentinel-2 image retrieval tools
+    description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    source:
+
+  - title: Sentinel-2 image processing tools
+    description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    source: https://github.com/ikkifik/sentinel2-processing-tools
+
+  - title: ERA5 Reanalysis weather data retrieval tools
+    description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    source: https://github.com/ikkifik/era5-processing-tools
+
+  - title: Marketplace hybrid recommender system
+    description: A source code of my undergraduate thesis project
+    source: https://github.com/ikkifik/hybrid-recsys-mp
+
+  
