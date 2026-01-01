@@ -100,5 +100,8 @@ theme: clean # user-defined theme
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: ''
+deploy:
+  type: git
+  repo: <repository url> # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  branch: gh-pages
+  message: initial deploy
