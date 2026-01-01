@@ -1,7 +1,17 @@
 <h1 id="navbar-h1">Fikri</h1>
 
 <nav>
-  <% for (name in theme.nav)  { %>
-    <a href="<%- url_for(theme.nav[name]) %>" class="menu-item-link"><%= name %></a>
+  <% for (name in theme.nav) { 
+       let navUrl = url_for(theme.nav[name]);
+       let navSlug = navUrl.replace(/^(\.\.\/|\/)/, '').replace(/\/$/, '');
+
+       let currentSlug = page.path.replace(/\/index\.html$/, '');
+       let isActive = currentSlug === navSlug;
+
+  %>
+    <a href="<%- navUrl %>"
+       class="menu-item-link <%= isActive ? 'active' : '' %>">
+      <%= name %>
+    </a>
   <% } %>
 </nav>

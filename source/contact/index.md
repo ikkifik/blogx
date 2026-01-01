@@ -5,11 +5,11 @@ layout: page
 
 <ul id="contact-list">
     <li>
-        <i class="fa-solid fa-envelope" style="color:darkred;font-size:18px"></i> 
+        <i class="fa-solid fa-envelope" style="color:darkred;font-size:18px"></i> (Personal) 
         <a href="mailto:mzuhdifj@gmail.com" target="_blank" rel="noopener noreferrer"> mzuhdifj@gmail.com</a>
     </li>
     <li>
-        <i class="fa-solid fa-envelope" style="color:cornflowerblue;font-size:18px"></i> 
+        <i class="fa-solid fa-envelope" style="color:cornflowerblue;font-size:18px"></i> (Academic)
         <a href="mailto:muh.zuhdi.fikri.j.25@shizuoka.ac.jp" target="_blank" rel="noopener noreferrer"> muh.zuhdi.fikri.j.25@shizuoka.ac.jp</a>
     </li>
     <li>

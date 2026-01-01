@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Homepage
+title: Personal page
 subtitle: ''
 description: ''
 keywords:
@@ -102,6 +102,6 @@ theme: clean # user-defined theme
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: <repository url> # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  repo: https://github.com/ikkifik/blogx.git # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   branch: gh-pages
   message: initial deploy

@@ -15,8 +15,8 @@ body {
     width: 45%;
     margin: auto;
     color: rgb(245, 245, 245);
-    a { text-decoration: none; color: rgba(255, 255, 255, 0.5); }
-    a:hover { color: rgba(255, 255, 255, 1); }
+    a { text-decoration: none; color: rgb(255, 255, 255); opacity: 0.6; transition: 0.3s; }
+    a:hover { opacity: 1; }
 }
 
 footer {
