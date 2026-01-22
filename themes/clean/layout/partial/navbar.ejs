@@ -1,17 +1,22 @@
 <h1 id="navbar-h1">Fikri</h1>
 
-<nav>
-  <% for (name in theme.nav) { 
-       let navUrl = url_for(theme.nav[name]);
-       let navSlug = navUrl.replace(/^(\.\.\/|\/)/, '').replace(/\/$/, '');
+<nav class="navbar">
+  <button class="nav-toggle" aria-label="Toggle menu">
+    ☰
+  </button>
 
-       let currentSlug = page.path.replace(/\/index\.html$/, '');
-       let isActive = currentSlug === navSlug;
-
-  %>
-    <a href="<%- navUrl %>"
-       class="menu-item-link <%= isActive ? 'active' : '' %>">
-      <%= name %>
-    </a>
-  <% } %>
+  <div class="nav-menu">
+    <% for (name in theme.nav) { 
+         let navUrl = url_for(theme.nav[name]);
+         let navSlug = navUrl.replace(/^(\.\.\/|\/)/, '').replace(/\/$/, '');
+         let currentSlug = page.path.replace(/\/index\.html$/, '');
+         let isActive = currentSlug === navSlug;
+    %>
+      <a href="<%- navUrl %>"
+         class="menu-item-link <%= isActive ? 'active' : '' %>">
+        <%= name %>
+      </a>
+    <% } %>
+  </div>
 </nav>
+
