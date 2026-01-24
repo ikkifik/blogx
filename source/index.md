@@ -16,3 +16,9 @@ layout: index
 <p class="home-paragraph">
     My research interest spans data engineering, data mining, time-series forecasting, streaming data processing, geographic information system. 
 </p>
+
+<hr id="home-hr">
+
+<p class="home-paragraph">
+    I sometimes ✍🏻 write my own thoughts on <a href="https://blog.zuhdifikri.my.id" rel="noopener noreferrer">blog</a>. 
+</p>
