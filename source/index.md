@@ -19,6 +19,11 @@ layout: index
     My research interest spans data engineering, data mining, time-series forecasting, geospatial data processing. 
 </p>
 
+<div class="home-tags">
+    <a class="home-tag" href="#">✍🏻 Blog</a>
+    <a class="home-tag" href="#">🍳 Recipes</a>
+</div>
+
 <hr id="home-hr">
 
 <h2 class="page-h2">Contact</h2>

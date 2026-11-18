@@ -10,6 +10,34 @@
     a { text-decoration: underline; }
 }
 
+/* Bulma-style tags */
+.home-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1em 0;
+}
+
+.home-tags a.home-tag {
+    display: inline-flex;
+    align-items: center;
+    height: 2em;
+    padding: 0 0.75em;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    color: rgb(245, 245, 245);
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    opacity: 0.8;
+}
+
+.home-tags a.home-tag:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
 .home-contact {
     line-height: 2em;
     margin-left: 1em;
