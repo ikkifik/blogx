@@ -1,11 +1,18 @@
 #home-hr {
     width: 100px;
     border-color: rgba(125, 125, 125, 0.3);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 .home-paragraph {
-    line-height: 2rem;
+    line-height: 2em;
+    a { text-decoration: underline; }
+}
+
+.home-contact {
+    line-height: 2em;
+    margin-left: 1em;
+    font-family: monospace;
     a { text-decoration: underline; }
 }

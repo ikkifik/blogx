@@ -5,6 +5,8 @@ layout: index
 
 <h1 class="page-h1">Hi, Fikri's here!</h1>
 
+<hr id="home-hr">
+
 <p class="home-paragraph">
     I am a MS Informatics student at <a href="https://www.inf.shizuoka.ac.jp/en/" target="_blank" rel="noopener noreferrer">Shizuoka University</a>, Japan. I obtained my B.Cs degree from <a href="https://home.amikom.ac.id/" target="_blank" rel="noopener noreferrer">Universitas Amikom Yogyakarta</a>, Indonesia, advised by <a href="https://ariflaksito.net/" target="_blank" rel="noopener noreferrer">Arif Laksito</a>.
 </p>
@@ -14,11 +16,22 @@ layout: index
 </p>
 
 <p class="home-paragraph">
-    My research interest spans data engineering, data mining, time-series forecasting, streaming data processing, geographic information system. 
+    My research interest spans data engineering, data mining, time-series forecasting, geospatial data processing. 
 </p>
 
 <hr id="home-hr">
 
-<p class="home-paragraph">
-    I sometimes ✍🏻 write my own thoughts on <a href="http://blog.zuhdifikri.my.id" rel="noopener noreferrer">blog</a>. 
+<h2 class="page-h2">Contact</h2>
+<p class="home-contact">
+    &lt;Personal&gt; <a href="mailto:mzuhdifj@gmail.com" target="_blank" rel="noopener noreferrer"> mzuhdifj@gmail.com</a>
+    <br>
+    &lt;Student&gt; <a href="mailto:muh.zuhdi.fikri.j.25@shizuoka.ac.jp" target="_blank" rel="noopener noreferrer"> muh.zuhdi.fikri.j.25@shizuoka.ac.jp</a>
 </p>
+
+<hr id="home-hr">
+
+<!-- <p class="home-paragraph">
+    I sometimes ✍🏻 write my own thoughts on <a href="http://blog.zuhdifikri.my.id" rel="noopener noreferrer">blog</a>. 
+</p> -->
+
+{% include_md achievements/index.md %}
