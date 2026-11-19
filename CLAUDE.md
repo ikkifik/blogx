@@ -22,10 +22,12 @@ npm run deploy   # hexo deploy, pushes public/ to the gh-pages branch of github.
 
 The site is data-driven: page content is mostly YAML, and EJS layouts render it.
 
-- **Pages** (`source/<name>/index.md`) are nearly empty. Their front matter's `layout:` picks a template in `themes/clean/layout/` (`index`, `projects`, `achievements`, or the default `page`). The home page (`source/index.md`) is the exception: it holds its own HTML body, which `index.ejs` outputs through `page.content`.
+- **Pages** (`source/<name>/index.md`) are nearly empty. Their front matter's `layout:` picks a template in `themes/clean/layout/` (`index`, `projects`, or the default `page`). The home page (`source/index.md`) is the exception: it holds its own HTML body, which `index.ejs` outputs through `page.content`. The `projects` and `contact` pages are still built but not linked, since the navbar is commented out in `layout.ejs`.
+- **Home sections** (`source/_sections/*.md`) are pulled into the home page with `{% include_md _sections/<file>.md %}` (`scripts/include_md.js`). They read data with the Nunjucks global `data('file.key')` (`scripts/data-tag.js`), e.g. `{% for item in data('contacts.contacts') %}`. Keep each `<section>` free of blank lines, or Markdown turns the indented lines after a blank line into a code block.
 - **Data** (`source/_data/*.yml`) is exposed to templates as `site.data.<file>`:
   - `projects.yml` → `projects.ejs` (`site.data.projects.projects`)
-  - `awards.yml` and `publications.yml` → `achievements.ejs`. Only `publications.conferences` and `publications.journal` are rendered; `books` exists in the data but isn't shown.
+  - `contacts.yml` → `_sections/contacts.md`
+  - `achievements.yml` and `publications.yml` → `_sections/achievements.md`. Only `publications.conferences` and `publications.journal` are rendered; `books` exists in the data but isn't shown.
   - `portal.yml` (language-learning links) isn't used by any template yet. A "Portal" link is still an open TODO in the README.
   So to change listed content, edit the YAML, not the templates.
 - **Shell**: `layout.ejs` wraps every page with the navbar partial, a `.container`, and a footer that contains a hardcoded "Last updated" date. Font Awesome comes from a CDN.

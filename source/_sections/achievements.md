@@ -1,23 +1,18 @@
----
-title: achievements
-layout: page
----
-
 <!--
   Content comes from source/_data/*.yml through the data('...') helper in
   scripts/data-tag.js. Keep each <section> free of blank lines: Markdown ends
   an HTML block at a blank line and would treat indented lines after it as code.
 -->
 
-<section class="awards">
-  <h2 class="page-h2">Awards</h2>
+<section class="achievements">
+  <h2 class="page-h2">Achievements</h2>
   <table>
     <colgroup>
       <col span="1" style="width: 70%;">
       <col span="1" style="width: 10%;">
     </colgroup>
     <tbody>
-      {%- for item in data('awards.awards') %}
+      {%- for item in data('achievements.achievements') %}
       <tr>
         <td>{{ item.title }}</td>
         <td style="text-align: right;">{{ item.year }}</td>

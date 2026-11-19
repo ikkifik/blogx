@@ -44,10 +44,10 @@ If you get "Permission denied", run `bash deploy.sh` instead, or make it executa
 Most content is stored as YAML in `source/_data/`:
 
 - `projects.yml`: Projects page
-- `awards.yml`, `publications.yml`: Achievements page
+- `contacts.yml`, `achievements.yml`, `publications.yml`: Contact and Achievements sections on the home page
 - `portal.yml`: language-learning links (not shown yet)
 
-The home page text is in `source/index.md`. The custom theme (layouts, CSS, JS) is in `themes/clean/`, and the navbar links are in `themes/clean/_config.yml`.
+The home page text is in `source/index.md`. It pulls in the sections in `source/_sections/` with `{% include_md %}`. The custom theme (layouts, CSS, JS) is in `themes/clean/`, and the navbar links are in `themes/clean/_config.yml`.
 
 ## TODO
 - [ ] Revisi "Project" page, bikin list sederhana aja, kasih sub-title as category: Github, Article, Learning Note, etc.

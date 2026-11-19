@@ -9,7 +9,6 @@
     font-size: 20px;
 }
 
-
 .publications {
     line-height: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
@@ -19,13 +18,12 @@
     };
 }
 
-.awards {
+.achievements {
     color: rgba(255, 255, 255, 0.8);
     table tbody tr td {
         line-height: 1.75rem;
     }
 }
-
 
 #contact-list {
     width: 60%;

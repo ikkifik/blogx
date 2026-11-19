@@ -25,18 +25,7 @@ layout: index
 </div>
 
 <hr id="home-hr">
-
-<h2 class="page-h2">Contact</h2>
-<p class="home-contact">
-    &lt;Personal&gt; <a href="mailto:mzuhdifj@gmail.com" target="_blank" rel="noopener noreferrer"> mzuhdifj@gmail.com</a>
-    <br>
-    &lt;Student&gt; <a href="mailto:muh.zuhdi.fikri.j.25@shizuoka.ac.jp" target="_blank" rel="noopener noreferrer"> muh.zuhdi.fikri.j.25@shizuoka.ac.jp</a>
-</p>
+{% include_md _sections/contacts.md %}
 
 <hr id="home-hr">
-
-<!-- <p class="home-paragraph">
-    I sometimes ✍🏻 write my own thoughts on <a href="http://blog.zuhdifikri.my.id" rel="noopener noreferrer">blog</a>. 
-</p> -->
-
-{% include_md achievements/index.md %}
+{% include_md _sections/achievements.md %}
