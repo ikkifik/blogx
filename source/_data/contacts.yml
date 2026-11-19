@@ -6,3 +6,11 @@ contacts:
   - type: Student
     link: mailto:muh.zuhdi.fikri.j.25@shizuoka.ac.jp
     text: muh.zuhdi.fikri.j.25@shizuoka.ac.jp
+  
+  - type: Github
+    link: https://github.com/ikkifik
+    text: ikkifik
+  
+  # - type: Linkedin
+  #   link: https://www.linkedin.com/in/muhammad-zuhdi-fikri-johari/
+  #   text: Muhammad Zuhdi Fikri Johari
